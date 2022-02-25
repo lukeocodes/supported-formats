@@ -13,6 +13,7 @@
   "plugins": ["@typescript-eslint"],
   "ignorePatterns": ["src/**/*.spec.ts"],
   "rules": {
+    "object-curly-spacing": "off",
     "require-jsdoc": "off",
     "quotes": [2, "double", { "avoidEscape": true }]
   }

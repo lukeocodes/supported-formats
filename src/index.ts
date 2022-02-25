@@ -1,4 +1,4 @@
-import { lookup } from "mime-types";
+// import { lookup } from "mime-types";
 import { extname } from "path";
 
 export const extentions: string[] = [
@@ -59,12 +59,13 @@ export const extentions: string[] = [
 
 export function supported(file: string): boolean {
   const extention = extname(file);
-  const mimetype = lookup(file);
+  // const mimetype = lookup(file);
 
   // if (!mimetype) throw Error(`Could not read mimetype from ${file}.`);
 
-  if (!extentions.includes(extention))
+  if (!extentions.includes(extention)) {
     throw Error(`${extention} not a supported extension.`);
+  }
 
   // if (!mimetypes.includes(mimetype))
   //   throw Error(`${mimetype} not a supported mimetype.`);
