@@ -4,6 +4,11 @@
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts --config .eslintrc.json"
   },
+  "files": [
+    "dist/**/*",
+    "dist/index.d.ts",
+    "!**/*.map"
+  ],
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
@@ -67,11 +72,11 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "docs/CHANGELOG.md"
+          "changelogFile": "CHANGELOG.md"
         }
       ],
-      "@semantic-release/git",
       "@semantic-release/npm",
+      "@semantic-release/git",
       "@semantic-release/github"
     ]
   }
