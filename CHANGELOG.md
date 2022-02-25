@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/lukeocodes/supported-formats/compare/v1.0.7...v1.0.8) (2022-02-25)
+
+
+### Bug Fixes
+
+* actually run lint as lint ([7aaec01](https://github.com/lukeocodes/supported-formats/commit/7aaec019ec8f02f31a0b60830e5ef1d9e57f82a1))
+* linter errors in package ([dde895a](https://github.com/lukeocodes/supported-formats/commit/dde895a723b944fefdc6165b132ef40a5c317720))
+
 ## [1.0.7](https://github.com/lukeocodes/supported-formats/compare/v1.0.6...v1.0.7) (2022-02-25)
 
 
