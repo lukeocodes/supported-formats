@@ -11,6 +11,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
+  "ignorePatterns": ["src/**/*.spec.ts"],
   "rules": {
     "require-jsdoc": "off",
     "quotes": [2, "double", { "avoidEscape": true }]

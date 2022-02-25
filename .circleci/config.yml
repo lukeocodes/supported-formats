@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@4.7.0
 
 jobs:
-  test:
+  Release:
     docker:
       - image: cimg/node:17.2.0
     steps:
@@ -12,18 +12,21 @@ jobs:
           pkg-manager: yarn
       - run:
           command: yarn build
-          name: Build
+          name: Build package
       - run:
           command: yarn test
-          name: Run tests
+          name: Lint package
       - run:
-          command: yarn semantic-release || true
-          name: Release
+          command: yarn test
+          name: Test package
+      - run:
+          command: yarn semantic-release
+          name: Release package
 
 workflows:
   on_commit:
     jobs:
-      - test
+      - Release
   nightly:
     triggers:
       - schedule:
@@ -33,4 +36,4 @@ workflows:
               only:
                 - main
     jobs:
-      - test
+      - Release
