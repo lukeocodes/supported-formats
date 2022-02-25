@@ -20,6 +20,20 @@ $ npm install supported-formats
 # $ yarn add supported-formats
 ```
 
+Catch an error when a file isn't supported.
+
+```js
+import { supported } from "supported-formats";
+
+try {
+  supported(filePath);
+  // is supported
+} catch (err: any) {
+  this.error(err);
+  // is not supported
+}
+```
+
 # Developing
 
 This project can be cloned and ran locally.
