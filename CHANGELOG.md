@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/lukeocodes/supported-formats/compare/v1.0.8...v1.0.9) (2022-02-25)
+
+
+### Bug Fixes
+
+* **docs:** add usage example to the readme ([56c9a66](https://github.com/lukeocodes/supported-formats/commit/56c9a6637bed5a647d82e0844e074556660775a4))
+
 ## [1.0.8](https://github.com/lukeocodes/supported-formats/compare/v1.0.7...v1.0.8) (2022-02-25)
 
 
