@@ -18,5 +18,32 @@
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   },
-  "dependencies": {}
+  "name": "supported-formats",
+  "version": "0.0.0-development",
+  "description": "A package to test if your media file is supported for transcription.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lukeocodes/supported-formats.git"
+  },
+  "keywords": [
+    "deepgram",
+    "transcript",
+    "audio",
+    "video",
+    "subtitles",
+    "webvtt",
+    "srt",
+    "transcribe",
+    "ai",
+    "javascript",
+    "node",
+    "typescript"
+  ],
+  "author": "Luke Oliff <luke@lukeoliff.com> (https://lukeocodes.dev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeocodes/supported-formats/issues"
+  },
+  "homepage": "https://github.com/lukeocodes/supported-formats#readme"
 }
